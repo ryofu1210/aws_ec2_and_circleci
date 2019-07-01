@@ -6,5 +6,5 @@ RUN mkdir /workdir
 WORKDIR /workdir
 ADD Gemfile /workdir/Gemfile
 ADD Gemfile.lock /workdir/Gemfile.lock
-RUN bundle install
+RUN bundle install --path vendor/bundle
 ADD . /workdir
